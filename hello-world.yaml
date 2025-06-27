@@ -1,0 +1,11 @@
+- name: hello world
+  host: local 
+  connection: local
+  tasks:
+  - name: print hello world
+    ansible.builtin.debug:
+     msg: hello world from devops class
+
+
+   
+

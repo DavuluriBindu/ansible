@@ -1,0 +1,11 @@
+- name: condition play 
+  hosts: local 
+  connection: local 
+  vars: 
+   Num: 50
+  tasks:
+  - name: when num is less than 100
+    ansible.builtin.debug:
+      msg: "when num {{ }} is less than 100"
+    when: Num < 100
+    

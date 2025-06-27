@@ -6,3 +6,8 @@
       name: nginx 
       state: present 
 
+  - name: install nginx 
+    ansible.builtin.service:
+      name: nginx 
+      state: start 
+      enable: yes 
